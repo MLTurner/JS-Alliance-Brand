@@ -1,10 +1,35 @@
-var customerName = "Alliance  ";
+var customerName = "Alliance";
+
+// <h1 id="tm-header" class="tm-brand text-uppercase"></h1> <!--todo: Add Customer Name-->
+function addCustomerName() {
+  let companyMainHeader = document.getElementById("tm-header");
+  companyMainHeader.textContent = customerName;
+}
+
+function toggleColors() {
+let navArr = document.querySelectorAll(".tm-white-rect");
+navArr.forEach(function(element){
+//console.log(element)
+element.classList.add("tm-blue-rect");
+element.classList.remove("tm-white-rect");
+})}
+
+//<ul class="nav flex-row tm-social-links">  <!--todo: Hide social links-->
+function hideElement() {
+let socialLinksContainer = document.querySelector("#social-links");
+socialLinksContainer.style.display = "none";
+}
+
+function addText() {
+  //<p id="intropara1" class="tm-color-gray">  <!--todo: Add customer company introduction text-->
+}
 
 /*
 
 Dream Pulse Template Customer Customizations
 <h1 id=“tm-header” class=“tm-brand text-uppercase”></h1>
 Add Customer Name to h1
+
 <span class=“d-inline-block tm-white-rect”></span>
 Change all class names ‘tm-white-rect’ to ‘tm-blue-rect’
 <ul class=“nav flex-row tm-social-links”>
